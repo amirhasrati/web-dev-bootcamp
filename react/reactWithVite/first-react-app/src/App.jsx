@@ -8,6 +8,8 @@ import Heading from "./Heading";
 import ColorList from "./ColorList";
 import Slots from "./Slots";
 import ShoppingList from "./ShoppingList";
+import Clicker from "./Clicker";
+import Form from "./Form";
 
 const data = [
     { id: 1, item: "eggs", quantity: 12, completed: false },
@@ -19,7 +21,12 @@ const data = [
 function App() {
     return (
         <div>
-            <ShoppingList items={data} />
+            {/* <Form /> */}
+            <Clicker
+                message="You are so ugly."
+                buttonText="Click 4 Compliment"
+            />
+            {/* <ShoppingList items={data} /> */}
             {/* <Slots val1="🍒" val2="🍒" val3="🍒" />
             <Slots val1="🍒" val2="🍌" val3="🍒" />
             <Heading color="magenta" text="Welcome!" fontSize="20px" />
