@@ -10,6 +10,9 @@ import Slots from "./Slots";
 import ShoppingList from "./ShoppingList";
 import Clicker from "./Clicker";
 import Form from "./Form";
+import Counter from "./Counter";
+import Toggler from "./Toggler";
+import ToggleCounter from "./ToggleCounter";
 
 const data = [
     { id: 1, item: "eggs", quantity: 12, completed: false },
@@ -21,11 +24,13 @@ const data = [
 function App() {
     return (
         <div>
+            {/* <ToggleCounter /> */}
+            <Counter />
             {/* <Form /> */}
-            <Clicker
+            {/* <Clicker
                 message="You are so ugly."
                 buttonText="Click 4 Compliment"
-            />
+            /> */}
             {/* <ShoppingList items={data} /> */}
             {/* <Slots val1="🍒" val2="🍒" val3="🍒" />
             <Slots val1="🍒" val2="🍌" val3="🍒" />
