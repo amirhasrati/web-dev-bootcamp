@@ -1,16 +1,16 @@
 import "./ColorBox.css";
 import { useState } from "react";
 
-export default function ColorBox({ colors }) {
-    const getRandomColor = () => {
-        const randI = Math.floor(Math.random() * colors.length);
-        return colors[randI];
-    };
+const getRandomColor = (colors) => {
+    const randI = Math.floor(Math.random() * colors.length);
+    return colors[randI];
+};
 
-    const [color, setColor] = useState(getRandomColor());
+export default function ColorBox({ colors }) {
+    const [color, setColor] = useState(getRandomColor(colors));
 
     const changeColor = () => {
-        setColor(getRandomColor());
+        setColor(getRandomColor(colors));
     };
 
     return (
